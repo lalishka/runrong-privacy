@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RUNRONG — foreground service demo</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.5}video{max-width:100%;max-height:80vh;display:block;margin:1rem auto}</style>
+</head>
+<body>
+<h1>RUNRONG — foreground service demo</h1>
+<p>Recorded on a Samsung Galaxy A55 (Android). The user starts a guided walk/run session; the workout keeps running in a foreground service with an ongoing notification after the user leaves the app.</p>
+<video controls playsinline src="fgs-demo.mp4"></video>
+<ul>
+<li><strong>location</strong>: GPS records the route, distance and pace only during an active run/walk session the user started (permission "While using the app").</li>
+<li><strong>mediaPlayback</strong>: offline voice coaching cues (stage changes, countdowns) play during the session, also when the screen is off or another app is open.</li>
+<li><strong>specialUse</strong>: the workout interval timer keeps counting for the whole session and is shown in the ongoing notification; the service stops when the session ends.</li>
+</ul>
+</body>
+</html>
